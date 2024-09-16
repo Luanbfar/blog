@@ -93,15 +93,17 @@ const AdminPage = () => {
           {posts.map((post) => (
             <div key={post.id} className="post-item">
               <h3>{post.title}</h3>
-              <button className="edit-btn" onClick={() => handleEdit(post)}>
-                Editar
-              </button>
-              <button
-                className="delete-btn"
-                onClick={() => handleDelete(post.id)}
-              >
-                Deletar
-              </button>
+              <div>
+                <button className="edit-btn" onClick={() => handleEdit(post)}>
+                <i className="bi bi-pen"></i>
+                </button>
+                <button
+                  className="delete-btn"
+                  onClick={() => handleDelete(post.id)}
+                >
+                  <i className="bi bi-trash"></i>
+                </button>
+              </div>
             </div>
           ))}
         </div>
@@ -117,6 +119,10 @@ const AdminPage = () => {
                   placeholder="Título do post"
                   className="title-input"
                 />
+                <div className="image-input">
+                  <label htmlFor="imagem">Imagem</label>
+                  <input type="file" name="imagem" />
+                </div>
               </div>
               <ReactQuill
                 value={editorContent}
