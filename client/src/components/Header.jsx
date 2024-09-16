@@ -31,6 +31,11 @@ const Header = () => {
         setMenuOpen(false);
     }
 
+    const navigateToContact = () => {
+        navigate('/contato');
+        setMenuOpen(false);
+    }
+
     return (
         <div className="header">
             <div className="logo" onClick={navigateToHome} style={{ cursor: 'pointer' }}>Blog</div>
@@ -41,7 +46,7 @@ const Header = () => {
                 <ul>
                     <li onClick={navigateToHome} style={{ cursor: 'pointer' }}>Início</li>
                     <li onClick={navigateToAbout} style={{ cursor: 'pointer' }}>Sobre nós</li>
-                    <li>Contato</li>
+                    <li onClick={navigateToContact}>Contato</li>
                     <li>
                         <button className='login-button' onClick={handleLoginClick}>Entrar</button>
                     </li>

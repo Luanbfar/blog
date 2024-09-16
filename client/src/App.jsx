@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import PostDetail from "./components/PostDetail";
 import About from "./pages/About/About";
 import AdminPage from "./pages/Admin/Admin";
+import ContactPage from "./pages/ContactPage/ContactPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/post/:id" element={<PostDetail />} />
             <Route path="/admin" element={<AdminPage />} />
+            <Route path="/contato" element={<ContactPage />} />
         </Routes>
     </Router>
 );
