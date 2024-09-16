@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #333; /* Define o fundo preto */
+    color: #fff; /* Define a cor do texto para branco */
+    max-height: 50px;
+}
+
+.header .logo {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Define a cor do logo para branco */
+    padding: 1rem;
+}
+
+.header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header nav ul li {
+    cursor: pointer;
+    color: #fff; /* Define a cor dos itens do menu para branco */
+}
+
+.demo-button,
+.get-started-button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #fff; /* Define o fundo dos botões para branco */
+    color: #000; /* Define a cor do texto dos botões para preto */
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.demo-button:hover,
+.get-started-button:hover {
+    background-color: #e0e0e0; /* Muda a cor do fundo ao passar o mouse */
+}

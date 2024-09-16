@@ -1,0 +1,21 @@
+.homepage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.top-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.featured-post {
+    flex: 2; /* Ocupa mais espaço */
+}
+
+.other-posts {
+    flex: 1; /* Ocupa menos espaço */
+    display: flex;
+    flex-direction: column;
+}

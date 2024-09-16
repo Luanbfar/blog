@@ -1,0 +1,29 @@
+.featured-post {
+    border: 1px solid #ddd;
+    background-color: white;
+    overflow: hidden;
+}
+
+.featured-post img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-content {
+    padding: 20px;
+}
+
+.post-category {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.featured-content h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
