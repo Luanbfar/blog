@@ -3,9 +3,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Login.css';
+import { useNavigate } from 'react-router-dom';
 
 const LoginPopup = ({ isOpen, onClose }) => {
+    const navigate = useNavigate();
     if (!isOpen) return null;
+
+    const navigateToAdmin = () => {
+        navigate("/admin");
+    }
 
     return (
         <div className="login-popup-overlay">
@@ -15,13 +21,13 @@ const LoginPopup = ({ isOpen, onClose }) => {
                 <form>
                     <div className="form-group">
                         <label htmlFor="email">Email:</label>
-                        <input type="text" id="email" name="email" />
+                        <input type="email" id="email" name="email" required/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="senha">Senha:</label>
-                        <input type="senha" id="senha" name="senha" />
+                        <input type="password" id="senha" name="senha" required/>
                     </div>
-                    <button type="submit">Login</button>
+                    <button onClick={navigateToAdmin} type="submit">Login</button>
                 </form>
             </div>
         </div>
