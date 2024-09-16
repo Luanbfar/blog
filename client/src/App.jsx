@@ -2,20 +2,21 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./App.css";
-import Header from "./components/Header";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from "./pages/HomePage/HomePage";
-import Footer from "./components/Footer";
+import PostDetail from "./components/PostDetail";
+import About from "./pages/About/About";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <HomePage />
-      </main>
-      <Footer />
-    </div>
-  );
+    <Router>
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/post/:id" element={<PostDetail />} />
+        </Routes>
+    </Router>
+);
 }
 
 export default App;

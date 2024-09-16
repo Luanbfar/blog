@@ -1,0 +1,37 @@
+/* Estilo geral da página de detalhes do post */
+.post-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.post-detail-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.post-detail-title {
+    font-size: 2rem;
+    color: #333; /* Cor do título */
+    margin-bottom: 15px;
+}
+
+.post-detail-content {
+    font-size: 1rem;
+    color: #555; /* Cor do texto do conteúdo */
+    line-height: 1.6;
+}
+
+/* Estilos para Header e Footer */
+.Header, .Footer {
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.Header h1, .Footer p {
+    margin: 0;
+}

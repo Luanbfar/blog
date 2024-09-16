@@ -2,6 +2,7 @@
     border: 1px solid #ddd;
     background-color: white;
     overflow: hidden;
+    margin: 0 auto; /* Centraliza o post se o container tiver uma largura máxima */
 }
 
 .featured-post img {
@@ -26,4 +27,36 @@
 .featured-content h2 {
     font-size: 24px;
     margin: 10px 0;
+}
+
+/* Media Query para telas menores que 768px */
+@media (max-width: 768px) {
+    .featured-content {
+        padding: 15px; /* Ajusta o padding em telas menores */
+    }
+
+    .post-category {
+        font-size: 10px; /* Reduz o tamanho da fonte da categoria */
+        padding: 4px 8px; /* Ajusta o padding da categoria */
+    }
+
+    .featured-content h2 {
+        font-size: 20px; /* Reduz o tamanho da fonte do título */
+    }
+}
+
+/* Media Query para telas menores que 480px */
+@media (max-width: 480px) {
+    .featured-content {
+        padding: 10px; /* Reduz o padding em telas muito pequenas */
+    }
+
+    .post-category {
+        font-size: 8px; /* Reduz ainda mais o tamanho da fonte da categoria */
+        padding: 3px 6px; /* Ajusta o padding da categoria */
+    }
+
+    .featured-content h2 {
+        font-size: 18px; /* Reduz o tamanho da fonte do título */
+    }
 }
